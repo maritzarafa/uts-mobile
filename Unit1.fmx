@@ -1,0 +1,120 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  ActiveControl = TabItem2
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 1
+    TabOrder = 0
+    TabPosition = Bottom
+    Sizes = (
+      640s
+      431s
+      640s
+      431s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 320.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'INPUT'
+      ExplicitSize.cx = 320.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Memo2: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Align = Client
+        Size.Width = 640.000000000000000000
+        Size.Height = 387.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 632.000000000000000000
+        Viewport.Height = 379.000000000000000000
+      end
+      object Button1: TButton
+        Action = Simpan
+        Align = Bottom
+        Enabled = True
+        ImageIndex = -1
+        Position.Y = 387.000000000000000000
+        Size.Width = 640.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 320.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'VIEW'
+      ExplicitSize.cx = 320.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object ToolBar1: TToolBar
+        Size.Width = 640.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Button2: TButton
+          Action = Baca
+          Align = Right
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 592.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'infotoolbutton'
+          TabOrder = 0
+          Text = 'Z'
+        end
+      end
+      object ListView1: TListView
+        ItemAppearanceClassName = 'TListItemAppearance'
+        ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Position.Y = 56.000000000000000000
+        Size.Width = 640.000000000000000000
+        Size.Height = 385.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        OnItemClick = ListView1ItemClick
+      end
+    end
+  end
+  object ActionList1: TActionList
+    Left = 536
+    Top = 64
+    object Simpan: TAction
+      Text = 'Simpan'
+      OnExecute = SimpanExecute
+    end
+    object Baca: TAction
+      Text = 'Baca'
+      OnExecute = BacaExecute
+    end
+  end
+end
